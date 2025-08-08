@@ -15,11 +15,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout0dev.
       - name: Use Node.js
         uses: actions/setup-node@v1
         with:
-          node-version: ${{ env.NODE_VERSION }}
+          node-version: {{ env.NODE_VERSION }}
 
       - name: yarn
         run: |
